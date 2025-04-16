@@ -1,0 +1,201 @@
+{
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body 
+{
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.penggelap 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* warna hitam dengan 50% transparansi */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+#search 
+{
+  background: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title 
+{
+  text-align: center;
+}
+
+.title h1 
+{
+  font-size: 28px;
+}
+
+.title p 
+{
+  font-size: 18px;
+}
+
+.form-container 
+{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.form-group select,
+.form-group input 
+{
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+}
+
+.form-group label 
+{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-container button 
+{
+  padding: 8px 25px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.form-container button:hover 
+{
+  background-color: #e68900;
+}
+
+.card-container 
+{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.card 
+{
+  background-color: white;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover 
+{
+  transform: translateY(-5px);
+}
+
+.card img 
+{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 
+{
+  font-size: 18px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.card p 
+{
+  font-size: 14px;
+  color: #555;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.card .price 
+{
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.card button 
+{
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 15px 0 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover 
+{
+  background-color: #1565c0;
+}
+
+@media (max-width: 768px) 
+{
+    .form-container 
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-group select,
+    .form-group input 
+    {
+        width: 100%;
+    }
+
+    .card 
+    {
+        width: 90%;
+    }
+}
