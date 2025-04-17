@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaki Salman | 231110131</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00ffe1;
+      box-shadow: 0 0 20px rgba(0, 255, 225, 0.6);
+      transition: transform 0.4s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #00ffe1;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #c7c7c7;
+      margin-bottom: 30px;
+    }
+
+    hr {
+      margin: 30px auto;
+      width: 50%;
+      border: none;
+      border-top: 2px solid #00ffe1;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    li {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 12px auto;
+      padding: 18px;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 255, 225, 0.3);
+    }
+
+    a {
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+  <h1>Zaki Salman</h1>
+  <p>NIM 231110131</p>
+
+  <hr>
+
+  <ul>
+    <li><a href="https://github.com/makhluk-antariksa/PemrogramanWeb/tree/main/tugas%201" target="_blank">🔗 Tugas 1</a></li>
+    <li><a href="https://github.com/makhluk-antariksa/PemrogramanWeb/tree/main/tugas%202" target="_blank">🔗 Tugas 2</a></li>
+    <li>Other coming soon...</li>
+  </ul>
+
+</body>
+</html>
